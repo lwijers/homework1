@@ -80,11 +80,11 @@ function isDead(creature) {
 // victorious
 function doBattle(heroicCreature, creature) {
   var curRound = 1
+  if (heroicCreature.heroic === false) {
+    return null;
+  }
   // check if both actors have health and if heroic
   while (heroicCreature.health >= 0 && creature.health >= 0) {
-    if (heroicCreature.heroic === false) {
-      return null;
-    }
     // attacker deals damage to defender
     console.log(`round: ${curRound}`);
     dealDamage(heroicCreature, creature);
