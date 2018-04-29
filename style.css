@@ -1,0 +1,15 @@
+
+#container {
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 5px solid black;
+}
+
+.buttImage {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
